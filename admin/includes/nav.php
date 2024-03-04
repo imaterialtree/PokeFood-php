@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary justify-content-center">
     <div class="container-fluid text-center">
-        <a class="navbar-brand" href="#">MyFood</a>
+        <a class="navbar-brand" href="#">PokeFood</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

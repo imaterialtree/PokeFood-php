@@ -3,6 +3,9 @@ body {
 }
 
 footer {
-    background-color: wheat;
+    background-color: rgb(148, 110, 37);
 }
 
+.text-wheat {
+    color: rgb(148, 110, 37);
+}

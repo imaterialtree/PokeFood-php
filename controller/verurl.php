@@ -4,7 +4,11 @@ class VerUrl{
         if(empty($url)){
             $url = "secoes/home.php";
         } else if(str_starts_with($url, "a-")){
-            $url = "admin/".mb_substr($url, 2).".php";
+            if ($url == "a-login") {
+                $url = "admin/index.php";
+            } else {
+                $url = "admin/secoes".mb_substr($url, 2).".php";
+            }
         } else {
             $url = "secoes/$url.php";
         }
