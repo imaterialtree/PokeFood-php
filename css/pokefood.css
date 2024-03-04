@@ -1,11 +1,11 @@
+:root{
+    --pk-brown: rgb(199, 151, 61);
+}   
+
 body {
     background-color: wheat;
 }
 
 footer {
-    background-color: rgb(148, 110, 37);
-}
-
-.text-wheat {
-    color: rgb(148, 110, 37);
+    background-color: var(--pk-brown)
 }

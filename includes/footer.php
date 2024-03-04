@@ -7,7 +7,7 @@
                 </div>
                 <div class="col-md-3">
                     <h5 class="mb-3">Links Úteis</h5>
-                    <ul class="list-unstyled">
+                    <ul class="list-unstyled text-decoration-none">
                         <li><a href="#">Início</a></li>
                         <li><a href="#">Receitas</a></li>
                         <li><a href="#">Sobre</a></li>

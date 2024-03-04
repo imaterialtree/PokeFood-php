@@ -16,7 +16,11 @@
     include("includes/nav.php");
     ?>
     <main>
-        <h1>Ademiro</h1>
+        <?php
+        include_once("controller/verUrl.php");
+        $redirecionar = new VerUrl();
+        $redirecionar->trocar_url(@$_GET["secao"]);
+        ?>
     </main>
     <?php
     include("includes/footer.php");
