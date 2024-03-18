@@ -14,6 +14,8 @@
                 <li class="nav-item"><a href="?secao=cadRestaurante" class="nav-link">CADASTRO RESTAURANTE</a></li>
                 <li class="nav-item"><a href="?secao=manageRestaurante" class="nav-link">GERENCIAR RESTAURANTES</a></li>
                 <li class="nav-item"><a href="?secao=listarUsuarios" class="nav-link">LISTAR USUÁRIOS</a></li>
+                <li class="nav-item"><a href="?secao=listarRestaurante" class="nav-link">LISTAR RESTAURANTE</a></li>
+                <li class="nav-item"><a href="?secao=updateRestaurante" class="nav-link">UPDATE RESTAURANTE</a></li>
             </ul>
         </div>
     </div>
