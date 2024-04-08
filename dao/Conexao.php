@@ -37,4 +37,8 @@ abstract class Conexao
         $this->total_fileds = @mysqli_num_rows($qr);
         return $this->total_fileds;
     }
+
+    public function get_status() {
+        return $this->status;
+    }
 }

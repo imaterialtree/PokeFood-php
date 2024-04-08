@@ -5,12 +5,28 @@ $dados = new ManipulaDados();
 $dados->set_table("tb_usuario");
 $lista = $dados->get_all_data_table();
 ?>
-<section>
-    <?php
-    foreach ($lista as $usuario) {
-    ?>
-        <h1><?= $usuario['nome'] ?></h1>
+<div class='container'>
+    <h2 class="display-5 mb-5">Lista de usuários</h2>
+    <table id="tabela-restaurantes" class="table table-striped table-hover" width="80%">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+            </tr>
+        </thead>
         <?php
-    }
-    ?>
-</section>
+        foreach ($lista as $usuario) {
+            ?>
+            <tr>
+                <td>
+                    <?= $usuario['nome'] ?>
+                </td>
+                <td>
+                    <?= $usuario['email'] ?>
+                </td>
+            </tr>
+            <?php
+        }
+        ?>
+    </table>
+</div>

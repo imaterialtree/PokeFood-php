@@ -16,6 +16,7 @@
                 <li class="nav-item"><a href="?secao=listarUsuarios" class="nav-link">LISTAR USUÁRIOS</a></li>
                 <li class="nav-item"><a href="?secao=listarRestaurante" class="nav-link">LISTAR RESTAURANTE</a></li>
                 <li class="nav-item"><a href="?secao=updateRestaurante" class="nav-link">UPDATE RESTAURANTE</a></li>
+                <li class="nav-item"><a href="?secao=logout.php" class="nav-link">LOGOUT</a></li>
             </ul>
         </div>
     </div>
