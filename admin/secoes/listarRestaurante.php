@@ -5,6 +5,7 @@ $dados = new ManipulaDados();
 $dados->set_table("tb_restaurante");
 $lista = $dados->get_all_data_table();
 
+
 ?>
 <div class="container">
     <h2 class="display-5 mb-5">Restaurantes Filiais </h2>
@@ -38,6 +39,9 @@ $lista = $dados->get_all_data_table();
                     </td>
                     <td>
                         <?= $restaurante['categoria'] ?>
+                    </td>
+                    <td>
+                        <img class="img-fluid" src=<?= $restaurante['url']?> alt="Foto do restaurante">
                     </td>
                     <td>
                         <form action="controller/alterarRestauranteForm.php" method="post">

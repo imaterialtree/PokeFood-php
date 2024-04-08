@@ -39,8 +39,8 @@ $restaurante = $dao->get_all_data_by_id("id", $id);
                 <input class="form-control" type="text" name="txtCategoria" value=<?=$restaurante['categoria']?> required>
             </div>
             <div class="mb-3">
-                <label for="fileImagem" class="form-label">Imagem do Restaurante</label>
-                <input class="form-control" type="file" name="fileImagem" value=<?=$restaurante['url']?> required>
+                <label for="url" class="form-label">Imagem do Restaurante</label>
+                <input class="form-control" type="file" name="url" value=<?=$restaurante['url']?>>
             </div>
             <input type="hidden" name="fieldId" value=<?= $id?>>
             <input type="submit" value="Salvar" class="btn btn-primary col-12">

@@ -18,6 +18,16 @@ class ManipulaDados extends Conexao{
         }
         return $dados;
     }
+    public function get_id_by_name($nome){
+        $this->sql = "SELECT * FROM $this->table WHERE nome='$nome'";
+        $this->qr = self::exec_query($this->sql);
+
+        
+        $row = self::list_qr($this->qr);
+            
+        return $row['id'];
+    }
+
 
     public function get_all_data_by_id($pk_name, $pk_value){
         $this->sql = "SELECT * FROM $this->table WHERE $pk_name = $pk_value";
@@ -63,6 +73,18 @@ class ManipulaDados extends Conexao{
         }
         else {
             $this->status= "Erro ao excluir na tabela $table\n". mysqli_error($this->conn);
+        }
+    }
+
+    public function get_by_fk($fk) {
+        $this->sql = "SELECT * 
+        FROM tb_comida
+        WHERE id_restaurante = $fk;";
+        if (self::exec_query($this->sql)) {
+            $this->status = "Consulta realizada com sucesso!!!";
+        }
+        else {
+            $this->status = "Erro na consulta!!!";
         }
     }
 }
