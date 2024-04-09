@@ -33,13 +33,7 @@ if (isset($_GET['erro']) && $_GET['erro'] == 1) {
 
             <button type="submit" class="btn btn-primary">Login</button>
             <button type="reset" class="btn btn-secondary">Limpar</button><br />
-
-
         </form>
-
-        <div>
-            <p class="mt-4"><i>Dica: usuário='usuario', senha='senha' </i></p>
-        </div>
     </div>
 
 

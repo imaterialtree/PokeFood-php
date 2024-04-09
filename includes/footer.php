@@ -9,17 +9,17 @@
                     <h5 class="mb-3">Links Úteis</h5>
                     <ul class="list-unstyled text-decoration-none">
                         <li><a href="#">Início</a></li>
-                        <li><a href="#">Receitas</a></li>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Contato</a></li>
+                        <li><a href="">Receitas</a></li>
+                        <li><a href="">Sobre</a></li>
+                        <li><a href="">Contato</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
                     <h5 class="mb-3">Siga-nos</h5>
                     <ul class="list-inline">
-                        <li class="list-inline-item"><a href="#"><i class="bi bi-facebook"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="bi bi-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="bi bi-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href=""><i class="bi bi-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href=""><i class="bi bi-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href=""><i class="bi bi-instagram"></i></a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">

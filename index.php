@@ -1,3 +1,8 @@
+<?php
+if (!isset($_GET['secao'])) {
+    header("Location: index.php?secao=home");
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 

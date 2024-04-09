@@ -80,11 +80,10 @@ class ManipulaDados extends Conexao{
         $this->sql = "SELECT * 
         FROM tb_comida
         WHERE id_restaurante = $fk;";
-        if (self::exec_query($this->sql)) {
-            $this->status = "Consulta realizada com sucesso!!!";
+        $dados = array();
+        while ($row = self::list_qr($this->qr)){
+            array_push($dados, $row);
         }
-        else {
-            $this->status = "Erro na consulta!!!";
-        }
+        return $dados;
     }
 }

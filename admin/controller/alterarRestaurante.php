@@ -34,4 +34,4 @@ $dao->update($tabela, $fields, $dados, $pk_name, $pk_value);
 $status = $dao->get_status();
 
 echo "<script>alert('$status')</script>";
-//echo "<script>location = '../principal.php?secao=listarRestaurante'</script>";
+echo "<script>location = '../principal.php?secao=manageRestaurante'</script>";
