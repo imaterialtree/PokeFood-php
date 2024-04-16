@@ -10,7 +10,7 @@ $restaurante = $dao->get_all_data_by_id("id", $id);
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">

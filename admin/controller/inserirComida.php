@@ -17,7 +17,7 @@ $nome_arquivo = $_FILES['fileImagem']['name'];
 $url = "images/comida/".$nome_arquivo;
 
 $nome_arquivo_salvo = converter_nome($_FILES["fileImagem"]["name"]);
-$url_local_salvo = "../../images/restaurante/" . $nome_arquivo_salvo;
+$url_local_salvo = "../../images/comida/" . $nome_arquivo_salvo;
 move_uploaded_file($_FILES['fileImagem']['tmp_name'], $url_local_salvo);
 
 $tabela = "tb_comida";

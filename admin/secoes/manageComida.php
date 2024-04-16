@@ -42,7 +42,7 @@ $lista = $dados->get_all_data_table();
                         <?= $comida['preco'] ?>
                     </td>
                     <td>
-                        <img class="img-fluid" src=<?= $comida['imagem']?> alt="Foto do comida">
+                        <img class="img-fluid" src="../<?=$comida['imagem']?>" alt="Foto do comida">
                     </td>
                     <td>
                         <form action="controller/alterarComidaForm.php" method="post">

@@ -18,16 +18,6 @@ class ManipulaDados extends Conexao{
         }
         return $dados;
     }
-    public function get_id_by_name($nome){
-        $this->sql = "SELECT * FROM $this->table WHERE nome='$nome'";
-        $this->qr = self::exec_query($this->sql);
-
-        
-        $row = self::list_qr($this->qr);
-            
-        return $row['id'];
-    }
-
 
     public function get_all_data_by_id($pk_name, $pk_value){
         $this->sql = "SELECT * FROM $this->table WHERE $pk_name = $pk_value";
@@ -77,9 +67,8 @@ class ManipulaDados extends Conexao{
     }
 
     public function get_by_fk($fk) {
-        $this->sql = "SELECT * 
-        FROM tb_comida
-        WHERE id_restaurante = $fk;";
+        $this->sql = "SELECT * FROM tb_comida WHERE restaurante_id = $fk";
+        $this->qr = self::exec_query($this->sql);
         $dados = array();
         while ($row = self::list_qr($this->qr)){
             array_push($dados, $row);

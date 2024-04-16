@@ -12,7 +12,7 @@ if (!isset($_GET['restaurante'])) {
 <div class="container">
     <h2 class="display-5 mb-5">Cardápio</h2>
     <hr>
-    <form action="index.php" method="get" id="formFiltraRestaurante">
+    <form action="index.php" method="get" id="formFiltraRestaurante" class="mb-5">
         <input type="hidden" name=secao value="cardapio">
         <label for="restaurante">Escolha um restaurante</label>
         <select name="restaurante" onchange="submitForm()">
@@ -32,17 +32,15 @@ if (!isset($_GET['restaurante'])) {
 <div class="card-columns">
     <?php
     $cardapio = $db_manipular->get_by_fk($_GET['restaurante']);
-    echo implode(", ", $cardapio);
-    echo $_GET['restaurante'];
     foreach ($cardapio as $comida) {
     ?>
         <div class="card col-4">
-            <img class="card-img-top" src='<?= $comida['url'] ?>' alt="Imagem da comida">
+            <img class="card-img-top" src='<?= $comida['imagem'] ?>' alt="Imagem da comida">
             <div class="card-body">
                 <h5 class="card-title"> <?= $comida['nome'] ?></h5>
                 <p class="card-text"> <?= $comida['descricao'] ?></p>
-                <p class="card-text"><strong> Categoria:</strong> <?= $comida['categoria']  ?> </p>
                 <p class="card-text"><strong> Ingredientes:</strong> <?= $comida['ingredientes']  ?> </p>
+                <p class="card-text"><strong> Preço:</strong> R$<?= $comida['preco']  ?> </p>
             </div>
         </div>
 
